@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/master.css">
+  <link href="/img/goldlogo.jpg" rel="icon">
+  <title>Postres de Pedro</title>
+</head>
+
+<body class="reset font-raleway text-gray-900">
+
+  <section>
+
+    <!--===================== Navbar =====================-->
+
+    <nav class="navbar flex items-center justify-between flex-wrap fixed w-full z-10 top-0 p-3 text-gray-300">
+      <!--logo-->
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <svg class="h-32 w-32 rounded-full fill-current text-gray-300 bg-brandy-punch-500" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path d="M0 2500 l0 -2500 2500 0 2500 0 0 2500 0 2500 -2500 0 -2500 0 0
+      -2500z m3525 1002 c150 -34 238 -80 323 -171 165 -176 145 -479 -44 -668 -113
+      -111 -275 -172 -510 -189 l-94 -7 0 24 c0 22 6 26 68 37 85 16 143 51 187 110
+      58 79 77 154 82 332 9 280 -37 416 -162 483 -33 18 -57 22 -137 22 -91 0 -99
+      -2 -123 -25 -15 -16 -28 -45 -35 -79 -14 -77 -14 -1653 1 -1706 22 -79 84
+      -133 172 -149 28 -5 37 -12 37 -26 0 -19 -9 -20 -310 -20 l-310 0 0 940 c0
+      1058 4 1002 -72 1041 -67 34 -228 35 -228 1 0 -4 25 -25 55 -47 90 -65 117
+      -151 76 -240 -69 -149 -288 -154 -362 -8 -25 50 -25 153 0 208 35 76 123 136
+      224 154 23 4 274 6 557 5 480 -1 521 -2 605 -22z m-1494 -536 c57 -49 151 -86
+      234 -93 l75 -6 0 -600 c0 -592 0 -601 21 -645 25 -50 73 -86 142 -103 33 -8
+      47 -16 47 -29 0 -16 -32 -17 -437 -23 -544 -7 -641 3 -803 81 -244 119 -328
+      391 -202 652 16 31 55 84 93 122 106 106 246 164 454 188 141 16 155 14 155
+      -14 0 -21 -6 -24 -50 -30 -88 -12 -170 -59 -213 -124 -52 -80 -69 -153 -75
+      -322 -8 -279 38 -418 162 -482 30 -16 65 -23 131 -26 87 -4 92 -3 122 22 23
+      19 34 41 42 77 7 33 11 291 11 761 l0 712 28 -45 c16 -24 44 -57 63 -73z" />
+          </g>
+        </svg>
+      </div>
+
+      <!--hamburger menu-->
+      <div class="block md:hidden">
+        <button class="flex items-center px-3 py-2 border rounded border-gray-700 hover:text-gray-700" onclick="insertNav()">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+
+      <!--list-->
+      <div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block pt-6 md:pt-0" id="nav-content">
+        <ul class="list-reset text-center md:flex justify-end flex-1 items-center text-lg lg:text-xl lg:font-semibold md:font-medium md:text-sm font-habibi">
+          <li class="mr-3a">
+            <a href="/index.html#top" class="smoothScroll inline-block lg:px-4 px-6 no-underline uppercase hover:text-gray-700">Home</a></li>
+          <li>
+            <a href="/index.html#aboutus" class="smoothScroll inline-block lg:px-4 px-2 no-underline uppercase hover:text-gray-700">About Us</a></li>
+          <li>
+            <a href="/products.html" class="inline-block lg:px-4 px-2 no-underline uppercase hover:text-gray-700">Products</a></li>
+          <li>
+            <a href="/classes.html" class="inline-block lg:px-4 px-2 no-underline uppercase hover:text-gray-700">Classes</a></li>
+          <li>
+            <a href="/gallery.html" class="inline-block lg:px-4 px-2 no-underline uppercase hover:text-gray-700">Gallery</a></li>
+          <li class="pr-2">
+            <a href="/contact.html" class="inline-block lg:px-4 px-2 no-underline uppercase hover:text-gray-700">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--===================== Text Overlay =====================-->
+
+    <div class="text-center flex flex-col items-center justify-center h-screen bg-img-home">
+      <div class="text-white text-shadow-black mx-auto font-normal leading-normal offset-navbar">
+        <h1 class="text-8xl leading-none font-tangerine">Custom-crafted treats to suit your dietary needs!</h1>
+        <h2 class="text-lg font-habibi italic uppercase md:mt-5 mt-2">Specializing in vegan, sugar-, dairy-, and gluten-free confections</h2>
+      </div>
+    </div>
+  </section>
+
+  <!--===================== Brief Description =====================-->
+
+  <section class="container m-auto text-center py-6">
+
+    <hr class="border-b w-8 m-auto my-6">
+
+    <h1 class="text-center font-bold text-4xl tracking-wider font-merriweather">Our Services</h1>
+
+    <div class="flex flex-wrap justify-between items-start">
+
+      <div class="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center justify-center p-4">
+        <div class="w-14 h-14 rounded-full mr-4 bg-gray-300" alt=""></div>
+        <h2 class="my-4 font-semibold uppercase tracking-wide font-habibi">Product Development</h2>
+        <p class="leading-normal mb-4 text-gray-700 text-sm">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center justify-center p-4">
+        <div class="w-14 h-14 rounded-full mr-4 bg-gray-300" alt=""></div>
+        <h2 class="my-4 font-semibold uppercase tracking-wide font-habibi">Catering</h2>
+        <p class="leading-normal mb-4 text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center justify-center p-4">
+        <div class="w-14 h-14 rounded-full mr-4 bg-gray-300" alt=""></div>
+        <h2 class="my-4 font-semibold uppercase tracking-wide font-habibi">Dessert Design</h2>
+        <p class="leading-normal mb-4 text-gray-700 text-sm">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center justify-center p-4">
+        <div class="w-14 h-14 rounded-full mr-4 bg-gray-300" alt=""></div>
+        <h2 class="my-4 font-semibold uppercase tracking-wide font-habibi">Education</h2>
+        <p class="leading-normal mb-4 text-gray-700 text-sm">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--===================== Showcase =====================-->
+
+  <section>
+    <hr class="border-b w-8 mx-auto my-6">
+
+    <h1 class="text-center font-bold text-4xl tracking-wider mt-2 font-merriweather">Our New Collection</h1>
+
+    <div class="flex flex-col lg:flex-row justify-around items-center">
+      <div class="w-full  xl:w-1/4 p-6 flex items-center justify-center text-center">
+        <a href="#">
+          <img class="hover:grow-md shadow-2xl h-72 rounded-sm" src="/img/caracas.jpg" alt="caracas cake">
+          <p id="aboutus" class="pt-3 font-medium tracking-wide text-sm">Caracas</p>
+        </a>
+      </div>
+
+      <div class="w-full  xl:w-1/4 p-6 flex items-center justify-center text-center">
+        <a href="#">
+          <img class="hover:grow-md shadow-2xl rounded-sm w-1/2 mx-auto lg:w-full" src="/img/ss2020-rio.jpg" alt="rio cake">
+          <p class="pt-3 font-medium tracking-wide text-sm">Río de Janeiro</p>
+        </a>
+      </div>
+
+      <div class="w-full  xl:w-1/4 p-6 flex items-center justify-center text-center">
+        <a href="#">
+          <img class="hover:grow-md shadow-2xl h-72 rounded-sm" src="/img/mumbai2.jpg" alt="mumbai cake">
+          <p class="pt-3 font-medium tracking-wide text-sm">Mumbai</p>
+        </a>
+      </div>
+    </div>
+
+    <hr class="border-b w-8 mx-auto my-6">
+
+  </section>
+
+  <!--===================== About Us =====================-->
+
+  <section class="py-4">
+
+    <div class="flex flex-wrap text-center">
+      <div class="lg:w-1/2 py-4 lg:px-4 mb-4 lg:mb-0">
+        <img src="/img/aboutimage.jpg" alt="cakes">
+      </div>
+
+      <div class="lg:w-1/2 py-4 lg:px-10 mb-4 lg:mb-0 flex flex-col justify-center">
+        <div class="p-20 md:p-24 lg:p-0">
+          <h3 class="text-2xl mb-3 font-habibi">Our History</h3>
+          <p class="leading-relaxed text-gray-700 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit facere at autem velit, corrupti tempora, praesentium aut soluta reiciendis maiores natus rem fuga a animi nesciunt id quas. Quas
+            ducimus porro, optio fugit quaerat maxime est nobis sunt, architecto.</p>
+          <p class="leading-relaxed text-gray-700">Eum totam quo odio, iusto eius. Aperiam dolorem modi rerum doloribus ullam nemo sequi, architecto consequatur. Totam quos, atque ea dolore dolorum quo veritatis odio distinctio nihil voluptas!</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--===================== Testimonials =====================-->
+  <section>
+
+    <hr class="border-b w-8 m-auto my-6">
+
+    <div class="relative m-auto">
+      <h1 class="text-center font-bold text-4xl tracking-wider mb-5 font-merriweather">What Our Customers Are Saying</h1>
+      <div class="relative w-full h-104 bg-img-reviews">
+
+        <!--slides-->
+        <div class="mySlides hidden fade text-center text-gray-900 text-2xl sm:text-xs xs:text-lg">
+          <p class="w-2/6 sm:w-4/6 xs:w-full mx-auto p-10 xs:p-3 bg-midnight-300 rounded-lgr absolute transform-center font-habibi leading-loose tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque, quaerat repellendus cupiditate hic facilis soluta quis quas vel quisquam similique molestiae laborum repellat, aperiam deserunt atque, eum asperiores sit? Vitae architecto rem sequi iure.</p>
+        </div>
+
+        <div class="mySlides hidden fade text-center text-gray-900 text-2xl sm:text-xs">
+          <p class="w-2/6 sm:w-4/6 xs:w-full mx-auto p-10 xs:p-3 bg-midnight-300 rounded-lgr absolute transform-center font-habibi leading-loose tracking-wide">Amet nam voluptas incidunt, laboriosam molestias minus harum dolores saepe consequatur sunt nemo sit blanditiis similique vero eligendi beatae nesciunt dolor omnis numquam rem excepturi. </p>
+        </div>
+
+        <div class="mySlides hidden fade text-center text-gray-900 text-2xl sm:text-xs">
+          <p class="w-2/6 sm:w-4/6 xs:w-full mx-auto p-10 xs:p-3 bg-midnight-300 rounded-lgr absolute transform-center font-habibi leading-loose tracking-wide">Veniam, culpa. Ea nemo earum autem suscipit ullam architecto quidem aspernatur dolores quisquam quo ab, fuga, excepturi corrupti inventore blanditiis officia asperiores mollitia.</p>
+        </div>
+
+        <!--buttons-->
+        <a class="prev cursor-pointer text-gray-400 hover:text-pink-swan-700 font-bold pl-4 absolute inset-y-0 left-0 flex items-center" onclick="plusSlides(-1)"><i class="fas fa-chevron-left fa-2x"></i></a>
+
+        <a class="next cursor-pointer text-gray-400 hover:text-pink-swan-700 font-bold pr-4 absolute inset-y-0 right-0 flex items-center" onclick="plusSlides(1)"><i class="fas fa-chevron-right fa-2x"></i></a>
+        <!--indicators-->
+        <div class="text-center cursor-pointer mb-8 absolute inset-x-0 bottom-0 flex justify-center">
+          <span class="dot h-3 w-3 mx-1 bg-gray-400 hover:bg-pink-swan-700 rounded-full inline-block" onclick="currentSlide(1)"></span>
+          <span class="dot h-3 w-3 mx-1 bg-gray-400 hover:bg-pink-swan-700 rounded-full inline-block" onclick="currentSlide(2)"></span>
+          <span class="dot h-3 w-3 mx-1 bg-gray-400 hover:bg-pink-swan-700 rounded-full inline-block" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===================== Newsletter =====================-->
+
+  <section class="antialiased w-full text-center text-black py-3">
+
+    <hr class="border-b w-8 m-auto my-6">
+
+    <form action="#" class="container mx-auto max-w-xl py-3 font-normal leading-normal" data-netlify="true" name="subscription request">
+      <h3 class="text-3xl font-habibi">Get Our Updates</h3>
+      <p class="pt-2">Find out about our latest promotions, events and news directly in your inbox.</p>
+      <div class="max-w-lg mt-4 mb-5 sm:flex xs:flex mx-auto">
+        <input type="email" class="block w-full focus:outline-0 bg-gray-200 focus:bg-white border border-red-500 rounded-l-lg text-gray-700 py-3 px-6 mb-2 sm:mb-0 xs:mb-0" name="email" placeholder="Enter your email" required="">
+        <button class="text-sm w-full xs:w-1/4 sm:w-auto rounded-r-lg shadow bg-midnight-500 hover:opacity-75 focus:shadow-outline focus:outline-none text-white uppercase font-medium tracking-wide px-6">Notify Me</button>
+      </div>
+    </form>
+
+    <hr class="border-b w-8 m-auto my-6">
+
+  </section>
+
+  <!--===================== Footer =====================-->
+
+  <footer id="footer"></footer>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/cfbc306662.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
