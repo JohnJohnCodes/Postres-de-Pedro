@@ -1,10 +1,16 @@
-//changes the background of the header on the homepage based on scroll//
+//changes the styling of the header on the homepage based on scroll//
 $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 150) {
       $('.navbar').addClass('bg-black');
+      $('.logo').removeClass('text-gray-300');
+      $('.logo').removeClass('rounded-full');
+      $('.logo').addClass('text-black');
     } else {
       $('.navbar').removeClass('bg-black');
+      $('.logo').addClass('text-gray-300');
+      $('.logo').addClass('rounded-full');
+      $('.logo').removeClass('text-black');
     }
   });
 });

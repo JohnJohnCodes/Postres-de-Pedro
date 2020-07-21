@@ -8,7 +8,12 @@
 }
 
 .offset-navbar {
-  margin-top: 9.5rem;
+  margin-top: 6.5rem;
+}
+
+.abouttarget {
+  margin-top: -9.5rem;
+  padding-top: 9.5rem;
 }
 
 .font-habibi {
@@ -209,6 +214,9 @@
   .xs\:w-1\/4 {
     width: 25%;
   }
+  .xs\:h-28 {
+    height: 7rem;
+  }
   .xs\:p-3 {
     padding: .75rem;
   }
@@ -218,7 +226,11 @@
   .xs\:mb-0 {
     margin-bottom: 0;
   }
-  .xs\:mx-1 {
+  .xs\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .xs\:mx-1 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
