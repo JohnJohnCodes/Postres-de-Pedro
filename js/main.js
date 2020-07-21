@@ -9,13 +9,6 @@ $(document).ready(function() {
   });
 });
 
-//replaces the text in the page header with the page's title//
-var x = document.title;
-
-function titleInjection() {
-  document.getElementById("sectiontext").innerHTML = x;
-}
-
 //show/hide navigation on smaller screens//
 function insertNav() {
   document.getElementById("nav-content").classList.toggle("hidden");
@@ -38,6 +31,13 @@ $(function() {
   $("#pageheader").load("/pageheader.html");
   $("#footer").load("/footer.html");
 });
+
+//replaces the text in the page header with the page's title//
+var x = document.title;
+
+function titleInjection() {
+  document.getElementById("sectiontext").textContent = x;
+}
 
 //smoothScroll//
 $(function() {
