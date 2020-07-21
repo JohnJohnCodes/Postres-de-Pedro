@@ -28,15 +28,13 @@ function addOption(method) {
 //loads pageheader and footer on pages//
 $(function() {
   $("#navigation").load("/navbar.html");
-  $("#pageheader").load("/pageheader.html");
+  $("#pageheader").load("/pageheader.html", titleInjection);
   $("#footer").load("/footer.html");
 });
 
 //replaces the text in the page header with the page's title//
-var x = document.title;
-
 function titleInjection() {
-  document.getElementById("sectiontext").textContent = x;
+  document.getElementById("sectiontext").textContent = document.title;
 }
 
 //smoothScroll//
