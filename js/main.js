@@ -10,10 +10,8 @@ $(document).ready(function() {
 });
 
 //replaces the text in the page header with the page's title//
-var x = document.title;
-
 function titleInjection() {
-  document.getElementById("sectiontext").innerHTML = x;
+  document.getElementById("sectiontext").textContent = document.title;;
 }
 
 //show/hide navigation on smaller screens//
